@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Job Application Autofill",
+  "description": "An extension to autofill job application forms with your personal information.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
